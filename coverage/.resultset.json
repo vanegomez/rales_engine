@@ -315,6 +315,48 @@
         1,
         null
       ],
+      "/Users/Vane/turing/3module/rales_engine/spec/models/invoice_item_spec.rb": [
+        1,
+        null,
+        1,
+        6,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Vane/turing/3module/rales_engine/app/models/invoice_item.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/Vane/turing/3module/rales_engine/spec/models/invoice_spec.rb": [
         1,
         null,
@@ -449,6 +491,6 @@
         null
       ]
     },
-    "timestamp": 1438030667
+    "timestamp": 1438031351
   }
 }

@@ -28,16 +28,6 @@
     <splitter split-orientation="horizontal" split-proportion="0.6346691">
       <split-first>
         <leaf>
-          <file leaf-file-name="item.rb" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/models/item.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-                  <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="item_spec.rb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec/models/item_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
@@ -48,21 +38,31 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="transaction_spec.rb" pinned="false" current-in-tab="true">
+          <file leaf-file-name="transaction_spec.rb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec/models/transaction_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.79545456" vertical-offset="10" max-vertical-offset="450">
-                  <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+                  <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="12" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="transaction.rb" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/models/transaction.rb">
+          <file leaf-file-name="invoice_item.rb" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/models/invoice_item.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-                  <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+                  <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="invoice_item_spec.rb" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/spec/models/invoice_item_spec.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.6818182" vertical-offset="0" max-vertical-offset="525">
+                  <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
@@ -75,8 +75,8 @@
           <file leaf-file-name="schema.rb" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/db/schema.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-1.4886364" vertical-offset="685" max-vertical-offset="1125">
-                  <caret line="2" column="9" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="9" />
+                <state vertical-scroll-proportion="1.4090909" vertical-offset="280" max-vertical-offset="1335">
+                  <caret line="60" column="9" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
                   <folding />
                 </state>
               </provider>
@@ -103,6 +103,8 @@
         <option value="$PROJECT_DIR$/spec/models/item_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/transaction.rb" />
         <option value="$PROJECT_DIR$/spec/models/transaction_spec.rb" />
+        <option value="$PROJECT_DIR$/app/models/invoice_item.rb" />
+        <option value="$PROJECT_DIR$/spec/models/invoice_item_spec.rb" />
       </list>
     </option>
   </component>
@@ -225,7 +227,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="SearchEverywhereHistoryKey" value="tra&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/transaction.rb&#10;items&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/spec/models/item_spec.rb&#10;item&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/item.rb&#10;gem&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/Gemfile&#10;in&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/invoice.rb&#10;invoi&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/invoice.rb&#10;invo&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/spec/models/invoice_spec.rb&#10;merc&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/merchant.rb&#10;mer&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/spec/models/merchant_spec.rb&#10;cus&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/customer.rb" />
+    <property name="SearchEverywhereHistoryKey" value="invoice&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/spec/models/invoice_item_spec.rb&#10;in&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/invoice_item.rb&#10;tra&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/transaction.rb&#10;items&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/spec/models/item_spec.rb&#10;item&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/item.rb&#10;gem&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/Gemfile&#10;invoi&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/invoice.rb&#10;invo&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/spec/models/invoice_spec.rb&#10;merc&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/merchant.rb&#10;mer&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/spec/models/merchant_spec.rb&#10;cus&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/customer.rb" />
   </component>
   <component name="RunManager" selected="Rails.Development: rales_engine">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -512,14 +514,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4886364" vertical-offset="685" max-vertical-offset="1125">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/invoice_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23863636" vertical-offset="0" max-vertical-offset="450">
@@ -586,16 +580,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/transaction.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+        <state vertical-scroll-proportion="0.17045455" vertical-offset="0" max-vertical-offset="440">
           <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4090909" vertical-offset="280" max-vertical-offset="1335">
+          <caret line="60" column="9" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/transaction_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79545456" vertical-offset="10" max-vertical-offset="450">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/invoice_item.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/models/invoice_item_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6818182" vertical-offset="0" max-vertical-offset="525">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
           <folding />
         </state>
       </provider>
