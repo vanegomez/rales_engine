@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
-      get 'customers/random'   => 'customers#random'
-      get 'customers/find'     => 'customers#find'
-      get 'customers/find_all' => 'customers#find_all'
+      get 'customers/random'           => 'customers#random'
+      get 'customers/find'             => 'customers#find'
+      get 'customers/find_all'         => 'customers#find_all'
+      get 'customers/:id/invoices'     => 'customers#invoices'
+      get 'customers/:id/transactions' => 'customers#transactions'
       resources :customers, only: [:index, :show]
 
       get 'invoice_items/random'      => 'invoice_items#random'
