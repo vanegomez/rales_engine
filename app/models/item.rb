@@ -5,4 +5,8 @@ class Item < ActiveRecord::Base
   validates :description, presence: true
   validates :unit_price, presence: true
   validates :merchant_id, presence: true
+
+  def self.random
+    Item.limit(1).order("RANDOM()")
+  end
 end

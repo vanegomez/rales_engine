@@ -5,6 +5,6 @@ class ApplicationController < ActionController::Base
 
 
   def parameters
-    request.query_parameter
+    request.query_parameters
   end
 end
