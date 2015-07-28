@@ -1,6 +1,6 @@
 class Customer < ActiveRecord::Base
   has_many :invoices
-  has_many :transactions
+  has_many :transactions, through: :invoices
 
   validates :first_name, presence: true
   validates :last_name, presence: true
@@ -8,7 +8,6 @@ class Customer < ActiveRecord::Base
   def self.random
     Customer.limit(1).order("RANDOM()")
   end
-
 
   def self.find_by_type(parameters)
     attribute = parameters.keys.first
