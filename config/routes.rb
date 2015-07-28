@@ -37,9 +37,10 @@ Rails.application.routes.draw do
       get 'merchants/:id/invoices' => 'merchants#items'
       resources :merchants, only: [:index, :show]
 
-      get 'transactions/random'   => 'transactions#random'
-      get 'transactions/find'     => 'transactions#find'
-      get 'transactions/find_all' => 'transactions#find_all'
+      get 'transactions/random'      => 'transactions#random'
+      get 'transactions/find'        => 'transactions#find'
+      get 'transactions/find_all'    => 'transactions#find_all'
+      get 'transactions/:id/invoice' => 'transactions#invoice'
       resources :transactions, only: [:index, :show]
     end
   end
