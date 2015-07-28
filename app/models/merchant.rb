@@ -8,4 +8,5 @@ class Merchant < ActiveRecord::Base
   def self.random
     Merchant.limit(1).order("RANDOM()")
   end
+
 end

@@ -24,9 +24,9 @@ Rails.application.routes.draw do
       get 'merchants/random'   => 'merchants#random'
       get 'merchants/find'     => 'merchants#find'
       get 'merchants/find_all' => 'merchants#find_all'
-      resources :merchants, only: [:index, :show] do
-        get 'items' => 'merchants#items'
-      end
+      get 'merchants/:id/items' => 'merchants#items'
+      get 'merchants/:id/invoices' => 'merchants#items'
+      resources :merchants, only: [:index, :show]
 
       get 'transactions/random'   => 'transactions#random'
       get 'transactions/find'     => 'transactions#find'
