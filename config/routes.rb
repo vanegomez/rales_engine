@@ -6,9 +6,11 @@ Rails.application.routes.draw do
       get 'customers/find_all' => 'customers#find_all'
       resources :customers, only: [:index, :show]
 
-      get 'invoice_items/random'    => 'invoice_items#random'
-      get 'invoice_items/find'      => 'invoice_items#find'
-      get 'invoice_items/find_all'  => 'invoice_items#find_all'
+      get 'invoice_items/random'      => 'invoice_items#random'
+      get 'invoice_items/find'        => 'invoice_items#find'
+      get 'invoice_items/find_all'    => 'invoice_items#find_all'
+      get 'invoice_items/:id/invoice' => 'invoice_items#invoice'
+      get 'invoice_items/:id/item'    => 'invoice_items#item'
       resources :invoice_items, only: [:index, :show]
 
       get 'invoices/random'   => 'invoices#random'
