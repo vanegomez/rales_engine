@@ -28,21 +28,21 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="customers_controller.rb" pinned="false" current-in-tab="false">
+          <file leaf-file-name="customers_controller.rb" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/customers_controller.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-                  <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.54545456" vertical-offset="0" max-vertical-offset="440">
+                  <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="customer.rb" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/models/customer.rb">
+          <file leaf-file-name="csv_import.rake" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lib/tasks/csv_import.rake">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3409091" vertical-offset="0" max-vertical-offset="440">
-                  <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="430" max-vertical-offset="870">
+                  <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -52,11 +52,31 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="routes.rb" pinned="false" current-in-tab="true">
+          <file leaf-file-name="customer.rb" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/models/customer.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.9886364" vertical-offset="0" max-vertical-offset="525">
+                  <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/config/routes.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.10227273" vertical-offset="0" max-vertical-offset="440">
-                  <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+                  <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="application_controller.rb" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+                  <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -84,7 +104,6 @@
         <option value="$PROJECT_DIR$/app/models/invoice_item.rb" />
         <option value="$PROJECT_DIR$/app/models/item.rb" />
         <option value="$PROJECT_DIR$/app/models/transaction.rb" />
-        <option value="$PROJECT_DIR$/lib/tasks/csv_import.rake" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/invoice_items_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/invoices_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/merchants_controller.rb" />
@@ -92,7 +111,9 @@
         <option value="$PROJECT_DIR$/app/controllers/api/v1/transactions_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/lib/tasks/csv_import.rake" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/customers_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/customer.rb" />
       </list>
     </option>
@@ -159,6 +180,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rales_engine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rales_engine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rales_engine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rales_engine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -260,7 +313,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="SearchEverywhereHistoryKey" value="gem&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/Gemfile&#10;cu&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/spec/models/customer_spec.rb&#10;invoice&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/spec/models/invoice_item_spec.rb&#10;in&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/invoice_item.rb&#10;tra&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/transaction.rb&#10;items&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/spec/models/item_spec.rb&#10;item&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/item.rb&#10;invoi&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/invoice.rb&#10;invo&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/spec/models/invoice_spec.rb&#10;merc&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/merchant.rb&#10;mer&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/spec/models/merchant_spec.rb&#10;cus&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/customer.rb" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/controllers/application_controller.rb&#10;appli&#9;null&#9;null&#10;gem&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/Gemfile&#10;cu&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/spec/models/customer_spec.rb&#10;invoice&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/spec/models/invoice_item_spec.rb&#10;in&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/invoice_item.rb&#10;tra&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/transaction.rb&#10;items&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/spec/models/item_spec.rb&#10;item&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/item.rb&#10;invoi&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/invoice.rb&#10;invo&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/spec/models/invoice_spec.rb&#10;merc&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/merchant.rb&#10;mer&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/spec/models/merchant_spec.rb&#10;cus&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/customer.rb" />
   </component>
   <component name="RunManager" selected="Rails.Development: rales_engine">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -531,7 +584,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.08670989" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.08670989" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -706,14 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tasks/csv_import.rake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14772727" vertical-offset="370" max-vertical-offset="870">
-          <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1335">
@@ -772,24 +817,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10227273" vertical-offset="0" max-vertical-offset="440">
-          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/tasks/csv_import.rake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="430" max-vertical-offset="870">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/customers_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.54545456" vertical-offset="0" max-vertical-offset="440">
+          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/customer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3409091" vertical-offset="0" max-vertical-offset="440">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.9886364" vertical-offset="0" max-vertical-offset="525">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>

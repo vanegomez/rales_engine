@@ -12,4 +12,12 @@ class Api::V1::CustomersController < ApplicationController
   def random
     respond_with Customer.random
   end
+
+  def find
+    respond_with Customer.find_by(parameters)
+  end
+
+  def find_all
+    respond_with Customer.where(parameters)
+  end
 end
