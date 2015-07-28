@@ -1,6 +1,6 @@
 class Customer < ActiveRecord::Base
   has_many :invoices
-  has_many :transactions, through: :invoices
+  has_many :transactions
 
   validates :first_name, presence: true
   validates :last_name, presence: true
@@ -9,22 +9,22 @@ class Customer < ActiveRecord::Base
     Customer.limit(1).order("RANDOM()")
   end
 
-  # def self.find_by(params)
-  #   params = to_downcase(params
-  #   super
-  # end
-  #
-  # def search(params)
-  #   params = to_downcase(params)
-  #   where(params)
-  # end
-  #
-  # def to_downcase(params)
-  #   params.each do |k, v|
-  #     if v.class == String
-  #       query = k.downcase
-  #       "lower(#{'v'}) LIKE ?", "%#{query}%"
-  #     end
-  #   end
-  # end
+
+  def self.find_by_type(parameters)
+    attribute = parameters.keys.first
+    value     = parameters.values.first.to_s.downcase
+
+    return find_by(attribute.to_sym => value ) if attribute == "id"
+
+    where("lower(#{attribute}) LIKE ?", "#{value}").first
+  end
+
+  def self.find_all_by_type(parameters)
+    attribute = parameters.keys.first
+    value     = parameters.values.first.to_s.downcase
+
+    return find_by(attribute.to_sym => value ) if attribute == "id"
+
+    where("lower(#{attribute}) LIKE ?", "#{value}")
+  end
 end
