@@ -35,12 +35,15 @@ Rails.application.routes.draw do
       get 'items/:id/merchant'      => 'items#merchant'
       resources :items, only: [:index, :show]
 
-      get 'merchants/random'       => 'merchants#random'
-      get 'merchants/find'         => 'merchants#find'
-      get 'merchants/find_all'     => 'merchants#find_all'
-      get 'merchants/:id/items'    => 'merchants#items'
-      get 'merchants/:id/invoices' => 'merchants#items'
-      get 'merchants/:id/revenue'      => 'merchants#revenue'
+      get 'merchants/random'                => 'merchants#random'
+      get 'merchants/find'                  => 'merchants#find'
+      get 'merchants/find_all'              => 'merchants#find_all'
+      get 'merchants/most_revenue'          => 'merchants#most_revenue'
+      get 'merchants/most_items'            => 'merchants#most_items'
+      get 'merchants/:id/items'             => 'merchants#items'
+      get 'merchants/:id/invoices'          => 'merchants#items'
+      get 'merchants/:id/revenue'           => 'merchants#revenue'
+      get 'merchants/:id/favorite_customer' => 'merchants#favorite_customer'
       resources :merchants, only: [:index, :show]
 
       get 'transactions/random'      => 'transactions#random'

@@ -29,8 +29,20 @@ class Api::V1::MerchantsController < ApplicationController
     respond_with set_merchant.invoices.all
   end
 
+  def most_revenue
+    respond_with Merchant.most_revenue params[:quantity]
+  end
+
+  def most_items
+    respond_with Merchant.most_items params[:quantity]
+  end
+
   def revenue
-    render json: set_merchant.revenue
+    render json: set_merchant.total_revenue
+  end
+
+  def favorite_customer
+    render json: set_merchant.fave_customer
   end
 
   private
