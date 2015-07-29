@@ -30,4 +30,6 @@ class Transaction < ActiveRecord::Base
 
     where("lower(#{attribute}) LIKE ?", "#{value}")
   end
+
+
 end

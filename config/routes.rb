@@ -4,9 +4,12 @@ Rails.application.routes.draw do
       get 'customers/random'           => 'customers#random'
       get 'customers/find'             => 'customers#find'
       get 'customers/find_all'         => 'customers#find_all'
-      get 'customers/:id/invoices'     => 'customers#invoices'
-      get 'customers/:id/transactions' => 'customers#transactions'
-      resources :customers, only: [:index, :show]
+      get 'customers/:id/invoices', to: 'customers#invoices'
+      get 'customers/:id/transactions', to: 'customers#transactions'
+      resources :customers, only: [:index, :show] do
+        # get '/invoices', to: 'customers#invoices'
+        # get '/transactions' => 'customers#transactions'
+      end
 
       get 'invoice_items/random'      => 'invoice_items#random'
       get 'invoice_items/find'        => 'invoice_items#find'
@@ -37,6 +40,7 @@ Rails.application.routes.draw do
       get 'merchants/find_all'     => 'merchants#find_all'
       get 'merchants/:id/items'    => 'merchants#items'
       get 'merchants/:id/invoices' => 'merchants#items'
+      get 'merchants/:id/revenue'      => 'merchants#revenue'
       resources :merchants, only: [:index, :show]
 
       get 'transactions/random'      => 'transactions#random'

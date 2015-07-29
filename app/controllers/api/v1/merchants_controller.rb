@@ -6,7 +6,7 @@ class Api::V1::MerchantsController < ApplicationController
   end
 
   def show
-    respond_with Merchant.find_by(id: params[:id])
+    respond_with set_merchant
   end
 
   def random
@@ -22,10 +22,20 @@ class Api::V1::MerchantsController < ApplicationController
   end
 
   def items
-    respond_with Merchant.find_by(id: params[:id]).items.all
+    respond_with set_merchant.items.all
   end
 
   def invoices
-    respond_with Merchant.find_by(id: params[:id]).invoices.all
+    respond_with set_merchant.invoices.all
+  end
+
+  def revenue
+    render json: set_merchant.revenue
+  end
+
+  private
+
+  def set_merchant
+    Merchant.find_by(id: params[:id])
   end
 end

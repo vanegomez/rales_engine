@@ -2,6 +2,8 @@ class Merchant < ActiveRecord::Base
   has_many :items
   has_many :invoices
   has_many :customers, through: :invoices
+  has_many :transactions, through: :invoices
+  has_many :invoice_items, through: :invoices
 
   validates :name, presence: true
 
@@ -25,5 +27,9 @@ class Merchant < ActiveRecord::Base
     return find_by(attribute.to_sym => value ) if attribute == "id"
 
     where("lower(#{attribute}) LIKE ?", "#{value}")
+  end
+
+  def revenue
+    invoices.successful.joins(:invoice_items).sum('quantity * unit_price') / 100.00
   end
 end

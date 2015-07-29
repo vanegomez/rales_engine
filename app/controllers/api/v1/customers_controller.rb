@@ -14,18 +14,18 @@ class Api::V1::CustomersController < ApplicationController
   end
 
   def find
-    respond_with Customer.find_by_type(parameters)
+    render json: Customer.find_by_type(parameters)
   end
 
   def find_all
-    respond_with Customer.find_all_by_type(parameters)
+    render json: Customer.find_all_by_type(parameters)
   end
 
   def invoices
-    respond_with Customer.find_by(id: params[:id]).invoices
+    render json: Customer.find_by(id: params[:id]).invoices
   end
 
   def transactions
-    respond_with Customer.find_by(id: params[:id]).transactions
+    render json: Customer.find_by(id: params[:id]).transactions
   end
 end
