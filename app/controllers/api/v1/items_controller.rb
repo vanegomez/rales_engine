@@ -1,12 +1,10 @@
 class Api::V1::ItemsController < ApplicationController
-  respond_to :json, :xml
-
   def index
     respond_with Item.all
   end
 
   def show
-    respond_with Item.find_by(id: params[:id])
+    respond_with set_item
   end
 
   def random
@@ -22,10 +20,16 @@ class Api::V1::ItemsController < ApplicationController
   end
 
   def invoice_items
-    respond_with Item.find_by(id: params[:id]).invoice_items
+    respond_with set_item.invoice_items
   end
 
   def merchant
-    respond_with Item.find_by(id: params[:id]).merchant
+    respond_with set_item.merchant
+  end
+
+  private
+
+  def set_item
+    Item.find_by(id: params[:id])
   end
 end

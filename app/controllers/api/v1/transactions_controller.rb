@@ -1,12 +1,10 @@
 class Api::V1::TransactionsController < ApplicationController
-  respond_to :json, :xml
-
   def index
     respond_with Transaction.all
   end
 
   def show
-    respond_with Transaction.find_by(id: params[:id])
+    respond_with set_transaction
   end
 
   def random
@@ -22,6 +20,12 @@ class Api::V1::TransactionsController < ApplicationController
   end
 
   def invoice
-    respond_with Transaction.find_by(id: params[:id]).invoice
+    respond_with set_transaction.invoice
+  end
+
+  private
+
+  def set_transaction
+    Transaction.find_by(id: params[:id])
   end
 end

@@ -33,6 +33,10 @@ class Merchant < ActiveRecord::Base
     invoices.successful.joins(:invoice_items).sum('quantity * unit_price') / 100.00
   end
 
+  def revenue_for_date(date)
+    invoices.successful.where(created_at: date).joins(:invoice_items).sum("quantity * unit_price") / 100.00
+  end
+
   def self.most_revenue(count)
     all.sort_by { |merchant| merchant.total_revenue }.last(count.to_i).reverse
   end
@@ -47,5 +51,9 @@ class Merchant < ActiveRecord::Base
 
   def fave_customer
     customers.max_by { |c| c.invoices.successful.where(merchant_id: id).count }
+  end
+
+  def pending_invoices
+    invoices.pending
   end
 end

@@ -1,12 +1,10 @@
 class Api::V1::CustomersController < ApplicationController
-  respond_to :json, :xml
-
   def index
     respond_with Customer.all
   end
 
   def show
-    respond_with Customer.find_by(id: params[:id])
+    respond_with set_customer
   end
 
   def random
@@ -22,10 +20,20 @@ class Api::V1::CustomersController < ApplicationController
   end
 
   def invoices
-    render json: Customer.find_by(id: params[:id]).invoices
+    render json: set_customer.invoices
   end
 
   def transactions
-    render json: Customer.find_by(id: params[:id]).transactions
+    render json: set_customer.transactions
+  end
+
+  def favorite_merchant
+    respond_with set_customer.fave_merchant
+  end
+
+  private
+
+  def set_customer
+    Customer.find_by(id: params[:id])
   end
 end

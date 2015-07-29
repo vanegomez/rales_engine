@@ -27,4 +27,8 @@ class Customer < ActiveRecord::Base
 
     where("lower(#{attribute}) LIKE ?", "#{value}")
   end
+
+  def fave_merchant
+    merchants.max_by { |customer| customer.invoices.successful.where(customer_id: id).count }
+  end
 end

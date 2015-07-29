@@ -1,6 +1,4 @@
 class Api::V1::MerchantsController < ApplicationController
-  respond_to :json, :xml
-
   def index
     respond_with Merchant.all
   end
@@ -37,12 +35,24 @@ class Api::V1::MerchantsController < ApplicationController
     respond_with Merchant.most_items params[:quantity]
   end
 
+  def merchants_revenue
+    respond_with Merchant.revenue_for_date params[:date]
+  end
+
   def revenue
-    render json: set_merchant.total_revenue
+    if set_merchant && params[:date]
+      respond_with set_merchant.revenue_for_date params[:date]
+    else
+      respond_with set_merchant.total_revenue
+    end
   end
 
   def favorite_customer
-    render json: set_merchant.fave_customer
+    respond_with set_merchant.fave_customer
+  end
+
+  def customers_with_pending_invoices
+    respond_with set_merchant.pending_invoices
   end
 
   private

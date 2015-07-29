@@ -1,12 +1,10 @@
 class Api::V1::InvoicesController < ApplicationController
-  respond_to :json, :xml
-
   def index
     respond_with Invoice.all
   end
 
   def show
-  respond_with Invoice.find_by(id: params[:id])
+  respond_with set_invoice
   end
 
   def random
@@ -22,22 +20,28 @@ class Api::V1::InvoicesController < ApplicationController
   end
 
   def transactions
-    respond_with Invoice.find_by(id: params[:id]).transactions
+    respond_with set_invoice.transactions
   end
 
   def invoice_items
-    respond_with Invoice.find_by(id: params[:id]).invoice_items
+    respond_with set_invoice.invoice_items
   end
 
   def items
-    respond_with Invoice.find_by(id: params[:id]).items
+    respond_with set_invoice.items
   end
 
   def customer
-    respond_with Invoice.find_by(id: params[:id]).customer
+    respond_with set_invoice.customer
   end
 
   def merchant
-    respond_with Invoice.find_by(id: params[:id]).customer
+    respond_with set_invoice.customer
+  end
+
+  private
+
+  def set_invoice
+    Invoice.find_by(id: params[:id])
   end
 end

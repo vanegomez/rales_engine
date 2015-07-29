@@ -1,19 +1,19 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
-      get 'customers/random'           => 'customers#random'
-      get 'customers/find'             => 'customers#find'
-      get 'customers/find_all'         => 'customers#find_all'
-      get 'customers/:id/invoices', to: 'customers#invoices'
-      get 'customers/:id/transactions', to: 'customers#transactions'
-      resources :customers, only: [:index, :show] do
-        # get '/invoices', to: 'customers#invoices'
-        # get '/transactions' => 'customers#transactions'
-      end
+      get 'customers/random'                => 'customers#random'
+      get 'customers/find'                  => 'customers#find'
+      get 'customers/find_all'              => 'customers#find_all'
+
+      get 'customers/:id/invoices'          => 'customers#invoices'
+      get 'customers/:id/transactions'      => 'customers#transactions'
+      get 'customers/:id/favorite_merchant' => 'customers#favorite_merchant'
+      resources :customers, only: [:index, :show]
 
       get 'invoice_items/random'      => 'invoice_items#random'
       get 'invoice_items/find'        => 'invoice_items#find'
       get 'invoice_items/find_all'    => 'invoice_items#find_all'
+
       get 'invoice_items/:id/invoice' => 'invoice_items#invoice'
       get 'invoice_items/:id/item'    => 'invoice_items#item'
       resources :invoice_items, only: [:index, :show]
@@ -21,6 +21,7 @@ Rails.application.routes.draw do
       get 'invoices/random'            => 'invoices#random'
       get 'invoices/find'              => 'invoices#find'
       get 'invoices/find_all'          => 'invoices#find_all'
+
       get 'invoices/:id/transactions'  => 'invoices#transactions'
       get 'invoices/:id/invoice_items' => 'invoices#invoice_items'
       get 'invoices/:id/items'         => 'invoices#items'
@@ -40,15 +41,19 @@ Rails.application.routes.draw do
       get 'merchants/find_all'              => 'merchants#find_all'
       get 'merchants/most_revenue'          => 'merchants#most_revenue'
       get 'merchants/most_items'            => 'merchants#most_items'
-      get 'merchants/:id/items'             => 'merchants#items'
-      get 'merchants/:id/invoices'          => 'merchants#items'
-      get 'merchants/:id/revenue'           => 'merchants#revenue'
-      get 'merchants/:id/favorite_customer' => 'merchants#favorite_customer'
+      get 'merchants/revenue'               => 'merchants#merchants_revenue'
+
+      get 'merchants/:id/items'                           => 'merchants#items'
+      get 'merchants/:id/invoices'                        => 'merchants#items'
+      get 'merchants/:id/revenue'                         => 'merchants#revenue'
+      get 'merchants/:id/favorite_customer'               => 'merchants#favorite_customer'
+      get 'merchants/:id/customers_with_pending_invoices' => 'merchants#customers_with_pending_invoices'
       resources :merchants, only: [:index, :show]
 
       get 'transactions/random'      => 'transactions#random'
       get 'transactions/find'        => 'transactions#find'
       get 'transactions/find_all'    => 'transactions#find_all'
+
       get 'transactions/:id/invoice' => 'transactions#invoice'
       resources :transactions, only: [:index, :show]
     end
