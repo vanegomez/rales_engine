@@ -12,23 +12,23 @@ class Api::V1::CustomersController < ApplicationController
   end
 
   def find
-    render json: Customer.find_by_type(parameters)
+    respond_with Customer.find_by_type(parameters)
   end
 
   def find_all
-    render json: Customer.find_all_by_type(parameters)
+    respond_with Customer.find_all_by_type(parameters)
   end
 
   def invoices
-    render json: set_customer.invoices
+    respond_with set_customer.invoices
   end
 
   def transactions
-    render json: set_customer.transactions
+    respond_with set_customer.transactions
   end
 
   def favorite_merchant
-    respond_with set_customer.fave_merchant
+    respond_with set_customer.favorite_merchant
   end
 
   private

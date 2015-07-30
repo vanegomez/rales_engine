@@ -32,6 +32,10 @@ Rails.application.routes.draw do
       get 'items/random'            => 'items#random'
       get 'items/find'              => 'items#find'
       get 'items/find_all'          => 'items#find_all'
+      get 'items/most_revenue'      => 'items#most_revenue'
+      get 'items/most_items'        => 'items#most_items'
+
+      get 'items/:id/best_day'      => 'items#best_day'
       get 'items/:id/invoice_items' => 'items#invoice_items'
       get 'items/:id/merchant'      => 'items#merchant'
       resources :items, only: [:index, :show]
@@ -59,3 +63,4 @@ Rails.application.routes.draw do
     end
   end
 end
+

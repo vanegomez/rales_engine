@@ -45,7 +45,7 @@ namespace :import do
     csv_text = File.read('db/csv/transactions.csv')
     csv = CSV.parse(csv_text, :headers => true)
     csv.each do |row|
-      Transaction.create!(row.to_hash)
+      Transaction.create!(row.to_hash.except("credit_card_expiration_date"))
     end
   end
 end

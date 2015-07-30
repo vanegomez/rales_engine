@@ -1,4 +1,5 @@
 class Merchant < ActiveRecord::Base
+  default_scope { order("id DESC") }
   has_many :items
   has_many :invoices
   has_many :customers, through: :invoices
@@ -38,27 +39,30 @@ class Merchant < ActiveRecord::Base
   end
 
   def revenue(date)
-    { revenue: invoices.successful.where(created_at: date).joins(:invoice_items).sum("quantity * unit_price").to_f }.to_json
+    { revenue: invoices.successful.where(created_at: date).joins(:invoice_items).sum('quantity * unit_price').to_f }.to_json
   end
 
 
-  def self.most_revenue(count)
-    all.sort_by { |merchant| merchant.total_revenue }.last(count.to_i).reverse
+  def self.most_revenue(quantity)
+    all.sort_by { |merchant| merchant.total_revenue }.last(quantity.to_i).reverse
   end
 
   def total_items
     invoices.successful.joins(:invoice_items).sum(:quantity)
   end
 
-  def self.most_items(count)
-    all.sort_by { |merchant| merchant.total_items }.last(count.to_i).reverse
+  def self.most_items(quantity)
+    all.sort_by { |merchant| merchant.total_items }.last(quantity.to_i).reverse
   end
 
-  def fave_customer
-    customers.max_by { |c| c.invoices.successful.where(merchant_id: id).count }
+  def favorite_customer
+    hash = Hash.new(0)
+    customers.map { |c| hash[c] += 1 }
+    hash.max
   end
 
   def pending_invoices
     invoices.pending
   end
 end
+
