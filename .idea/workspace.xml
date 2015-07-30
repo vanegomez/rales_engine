@@ -72,11 +72,21 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="customer.rb" pinned="false" current-in-tab="true">
+          <file leaf-file-name="customer.rb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/models/customer.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.2840909" vertical-offset="205" max-vertical-offset="645">
-                  <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="205" max-vertical-offset="645">
+                  <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="routes.rb" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/config/routes.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="1.1590909" vertical-offset="0" max-vertical-offset="1080">
+                  <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
                   <folding />
                 </state>
               </provider>
@@ -206,7 +216,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="SearchEverywhereHistoryKey" value="mer&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/merchant.rb&#10;sche&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/db/schema.rb&#10;routes&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/config/routes.rb&#10;item&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/controllers/api/v1/items_controller.rb&#10;a&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/controllers/application_controller.rb&#10;cu&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/customer.rb&#10;cus&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/customer.rb&#10;invo&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/invoice.rb&#10;tra&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/transaction.rb&#10;rou&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/config/routes.rb&#10;sch&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/db/schema.rb&#10;appli&#9;null&#9;null&#10;gem&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/Gemfile&#10;invoice&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/spec/models/invoice_item_spec.rb&#10;in&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/invoice_item.rb&#10;items&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/spec/models/item_spec.rb&#10;invoi&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/invoice.rb&#10;merc&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/merchant.rb" />
+    <property name="SearchEverywhereHistoryKey" value="rou&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/config/routes.rb&#10;mer&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/merchant.rb&#10;sche&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/db/schema.rb&#10;routes&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/config/routes.rb&#10;item&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/controllers/api/v1/items_controller.rb&#10;a&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/controllers/application_controller.rb&#10;cu&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/customer.rb&#10;cus&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/customer.rb&#10;invo&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/invoice.rb&#10;tra&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/transaction.rb&#10;sch&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/db/schema.rb&#10;appli&#9;null&#9;null&#10;gem&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/Gemfile&#10;invoice&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/spec/models/invoice_item_spec.rb&#10;in&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/invoice_item.rb&#10;items&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/spec/models/item_spec.rb&#10;invoi&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/invoice.rb&#10;merc&#9;FILE&#9;file:///Users/Vane/turing/3module/rales_engine/app/models/merchant.rb" />
     <property name="options.lastSelected" value="preferences.keymap" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -699,14 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25" vertical-offset="400" max-vertical-offset="1080">
-          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3409091" vertical-offset="0" max-vertical-offset="440">
@@ -864,8 +866,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/customer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2840909" vertical-offset="205" max-vertical-offset="645">
-          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="205" max-vertical-offset="645">
+          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1590909" vertical-offset="0" max-vertical-offset="1080">
+          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
           <folding />
         </state>
       </provider>
