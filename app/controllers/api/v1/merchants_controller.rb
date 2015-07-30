@@ -35,13 +35,13 @@ class Api::V1::MerchantsController < ApplicationController
     respond_with Merchant.most_items params[:quantity]
   end
 
-  def merchants_revenue
-    respond_with Merchant.revenue_for_date params[:date]
+  def revenue
+    respond_with Merchant.revenue params[:date]
   end
 
-  def revenue
+  def merchant_revenue
     if set_merchant && params[:date]
-      respond_with set_merchant.revenue_for_date params[:date]
+      respond_with set_merchant.revenue params[:date]
     else
       respond_with set_merchant.total_revenue
     end

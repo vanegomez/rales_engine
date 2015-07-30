@@ -41,11 +41,11 @@ Rails.application.routes.draw do
       get 'merchants/find_all'              => 'merchants#find_all'
       get 'merchants/most_revenue'          => 'merchants#most_revenue'
       get 'merchants/most_items'            => 'merchants#most_items'
-      get 'merchants/revenue'               => 'merchants#merchants_revenue'
+      get 'merchants/revenue'               => 'merchants#revenue'
 
       get 'merchants/:id/items'                           => 'merchants#items'
       get 'merchants/:id/invoices'                        => 'merchants#items'
-      get 'merchants/:id/revenue'                         => 'merchants#revenue'
+      get 'merchants/:id/revenue'                         => 'merchants#merchant_revenue'
       get 'merchants/:id/favorite_customer'               => 'merchants#favorite_customer'
       get 'merchants/:id/customers_with_pending_invoices' => 'merchants#customers_with_pending_invoices'
       resources :merchants, only: [:index, :show]

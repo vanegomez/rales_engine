@@ -30,12 +30,17 @@ class Merchant < ActiveRecord::Base
   end
 
   def total_revenue
-    invoices.successful.joins(:invoice_items).sum('quantity * unit_price') / 100.00
+    invoices.successful.joins(:invoice_items).sum('quantity * unit_price').to_f
   end
 
-  def revenue_for_date(date)
-    invoices.successful.where(created_at: date).joins(:invoice_items).sum("quantity * unit_price") / 100.00
+  def self.revenue(date)
+    { total_revenue: all.map { |merchant| merchant.revenue(date) }.reduce(0) {|merch_rev| merch_rev} }
   end
+
+  def revenue(date)
+    { revenue: invoices.successful.where(created_at: date).joins(:invoice_items).sum("quantity * unit_price").to_f }.to_json
+  end
+
 
   def self.most_revenue(count)
     all.sort_by { |merchant| merchant.total_revenue }.last(count.to_i).reverse
